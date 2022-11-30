@@ -1,0 +1,77 @@
+
+/* Our default values set as CSS variables */
+:root {
+  --color-bg: #a7fae9;
+  --color-text-main: #000000;
+  --color-primary: #FFFF00;
+  --wrapper-height: 87vh;
+  --image-max-width: 300px;
+  --image-margin: 3rem;
+  --font-family: "HK Grotesk";
+  --font-family-header: "HK Grotesk";
+}
+
+/* Basic page style resets */
+* {
+  box-sizing: border-box;
+}
+[hidden] {
+  display: none !important;
+}
+
+/* Import fonts */
+@font-face {
+  font-family: HK Grotesk;
+  src: url("https://cdn.glitch.me/605e2a51-d45f-4d87-a285-9410ad350515%2FHKGrotesk-Regular.otf?v=1603136326027")
+    format("opentype");
+}
+@font-face {
+  font-family: HK Grotesk;
+  font-weight: bold;
+  src: url("https://cdn.glitch.me/605e2a51-d45f-4d87-a285-9410ad350515%2FHKGrotesk-Bold.otf?v=1603136323437")
+    format("opentype");
+}
+
+
+
+
+
+
+
+.pointer {
+  cursor: url("F:\IML300_class\IML300\msmsmsm\assets\conquistador.png"), auto;
+}
+
+
+/* sliding elements */
+
+#sliding-paragraph {
+	height: 245px;
+}
+
+.slide-out, .slide-in {
+	display: block;
+	top: 0px;
+	left: 0px;
+	position: absolute;
+	-webkit-transition: all 300ms ease-in-out;
+}
+
+/* using transtions, you can move elements along the x or y axis */
+
+.slide-in {
+	opacity: 0;
+	-webkit-transform: translate(400px, 0);
+}
+
+/* when you hover on #paragraph-3, we're adjusting the x position of the .slide-out text, and .slide-in */
+
+#sliding-paragraph:hover .slide-out {
+	opacity: 0;
+	-webkit-transform: translate(-400px, 0);
+}
+
+#sliding-paragraph:hover .slide-in {
+	opacity: 1;
+	-webkit-transform: translate(0px, 0);
+}
