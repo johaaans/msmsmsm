@@ -96,14 +96,17 @@ body {
   border: 4px solid red;
 }
 
-#influence{
+.button{
   background-color: black;
   color: #a7fae9;
   border: 1px solid #000000;
-  box-sizing: border-box;
   border-radius: 4px;
-  padding: 0.5rem 0.5rem;
   transition: 500ms;
+}
+
+#influence {
+  font-family: inherit;
+  font-size: 75px;
 }
 
 /* sliding elements */
@@ -124,6 +127,8 @@ body {
 
 .slide-in {
 	opacity: 0;
+  color: #27ba62;
+  mix-blend-mode: exclusion;
 	-webkit-transform: translate(400px, 0);
 }
 
