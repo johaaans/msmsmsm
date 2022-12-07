@@ -8,12 +8,9 @@
 }
 
 /* Basic page style resets */
-* {
+*, body {
   margin: 0;
   padding: 0;
-}
-[hidden] {
-  display: none !important;
 }
 
 /* Import fonts */
@@ -48,6 +45,9 @@ body {
   border: 2px solid pink;
 }
 
+a {
+  decoration: no-decoration;
+}
 
 /* -----HOME----- */
 
@@ -55,15 +55,6 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   width: 100vw;
-}
-
-.pointer {
-  color: #ccc;
-}
-
-.pointer:hover {
-  color: black;
-  cursor: url("/Volumes/T7/IML300_class/IML300/msmsmsm/assets/img/conquistador.png"), auto;
 }
 
 
